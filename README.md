@@ -15,3 +15,5 @@ By the end of this project, I want to have done both the front page and the resu
  I feel like I'll have to spend the most time with the CSS positioning tasks.
 
  Partial success is recreating the Google front page. Full success also means recreating a decent version of the results page (with lorem ipsum).
+
+ From The Odin Project's [curriculum](http://www.theodinproject.com/web-development-101/html-css)
