@@ -47,15 +47,16 @@ input:hover {
 }
 
 .buttons {
-  width: 25%;
-  justify-content: center;
+  width: 20%;
+  display: inline-block;
 }
 
 .button {
   margin: auto;
-  padding: 5px;
+  padding: 15px;
   background-color: #F6F6F6;
   border-radius: 2px;
+  font-weight: bold;
 }
 
 
