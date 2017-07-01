@@ -1,11 +1,23 @@
+#header {
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+}
+
 #canvas {
   margin: 30px auto;
-  width: 1260px;
+  width: 960px;
+  height: 960px;
+  padding: 5px;
+  border-width: 2px;
+  border-color: #000;
+  border-style: solid;
 }
 
 .cell {
   background-color: #F0F0F0;
-  display: none;
 }
 
 .cell .painted {
