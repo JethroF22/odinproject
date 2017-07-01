@@ -1,0 +1,13 @@
+#canvas {
+  margin: 30px auto;
+  width: 1260px;
+}
+
+.cell {
+  background-color: #F0F0F0;
+  display: none;
+}
+
+.cell .painted {
+  background-color: #000;
+}
