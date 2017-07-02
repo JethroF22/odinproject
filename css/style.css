@@ -1,4 +1,4 @@
-#header {
+header {
   font-weight: bold;
   margin: auto;
   width: 50%;
@@ -6,20 +6,39 @@
 
 }
 
+input {
+  padding: 10px;
+}
+
+button {
+  background-color: #DBC090;
+  padding: 11px;
+  border-radius: 3px;
+  border-width: 0;
+}
+
+body {
+  background-color: Bisque;
+}
+
 #canvas {
+  background-color: White;
   margin: 30px auto;
   width: 960px;
   height: 960px;
-  padding: 5px;
-  border-width: 2px;
+  padding: 3px;
+  border-width: 1px;
   border-color: #000;
   border-style: solid;
+  border-radius: 3px;
 }
 
 .cell {
-  background-color: #F0F0F0;
+  background-color: #DDD;
+  float: left;
+  margin: 2px;
 }
 
-.cell .painted {
+.painted {
   background-color: #000;
 }
