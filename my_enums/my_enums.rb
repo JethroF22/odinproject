@@ -1,4 +1,4 @@
-module Enumerable
+module My_Enumerables
   def my_each
     copy = []
     for i in (0..(self.length-1))
@@ -83,11 +83,11 @@ module Enumerable
   end
 end
 
-def multiply_els array
-  product = array.my_inject(1) { |prod, i| prod * i }
-  product
-end
-
-array = [0, 1, 2, 3, 4]
-t21 = Proc.new { |i| i * 21 }
-p array.my_map(t21)
+# def multiply_els array
+#   product = array.my_inject(1) { |prod, i| prod * i }
+#   product
+# end
+#
+# array = [0, 1, 2, 3, 4]
+# t21 = Proc.new { |i| i * 21 }
+# p array.my_map(t21)
