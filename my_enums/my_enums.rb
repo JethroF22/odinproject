@@ -1,5 +1,6 @@
 module My_Enumerables
   def my_each
+    #TODO: see if this is actually doing the job of 'map' instead of 'each'
     copy = []
     for i in (0..(self.length-1))
       copy << yield(self[i])
