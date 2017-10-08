@@ -10,20 +10,20 @@ class Board
     for x in 0..6
       for y in 0..5
         coord = [x, y]
-        @squares[coord] = "☢ "
+        @squares[coord] = "  "
       end
     end
   end
 
   def display
     5.downto(0) do |y|
-      print (y).to_s
+      print (y+1).to_s
       for x in 0..6
         print " " + @squares[[x, y]]
       end
-      print "#{y}\n"
+      print "#{y+1}\n"
     end
-    print "  0  1  2  3  4  5  6\n"
+    print "  1  2  3  4  5  6  7\n"
   end
 end
 
@@ -84,9 +84,9 @@ class Game
     valid_move_selected = false
     until valid_move_selected
       print "#{current_player.name.capitalize}, please choose a column to play: "
-      x_coord = $stdin.gets.chomp.to_i
+      x_coord = ($stdin.gets.chomp.to_i) - 1
       y_coord = check_height(x_coord)
-      if x_coord.between(0, 6) and y_coord.between?(0, 5)
+      if x_coord.between?(0, 6) and y_coord.between?(0, 5)
         @board.squares[[x_coord, y_coord]] = current_player.symbol
         valid_move_selected = true
       else
@@ -106,7 +106,7 @@ class Game
 
     until paths.length == 0
       checking = paths.shift
-      next if @board.squares[checking] == "☢ "    # an empty square cannot be part of a line
+      next if @board.squares[checking] == "  "    # an empty square cannot be part of a line
       neighbors = neighbors(checking)
       neighbors.each do |direc, sq|
         if @board.squares[checking] == @board.squares[sq]       # if the square being checked is the same as its neighbor,
@@ -132,7 +132,7 @@ class Game
 
   def check_height(x_coord)
     y = 0
-    until @board.squares[[x_coord, y]] == "☢ " or y == 6
+    until @board.squares[[x_coord, y]] == "  " or y == 6
       y += 1
     end
     y
