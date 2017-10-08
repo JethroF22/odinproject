@@ -1,10 +1,12 @@
 # This module contains methods used by the Mastermind game and which don't
-# refer to any instance variables.
+# refer to any instance variables. I hadn't learned I *could* use instance
+# variables until I coded Chess.
 
 module Helpers
 
-  # Guesser uses this methods to generate its secret; AI uses it
-  # to generate its guesses.
+  # Guesser uses this methods to generate its secret; AI uses it to generate
+  # its guesses. Takes no inputs and outputs an array of 4 random numbers
+  # between 1 and 6.
   def random_array
     arr = []
     4.times do
@@ -13,11 +15,13 @@ module Helpers
     arr
   end
 
+  # Validates a player's input. Returns true if guess is an array of 4 numbers
+  # between 1 and 6.
   def valid?(guess)
     guess.size == 4 and guess.all? { |num| num.between?(1,6) }
   end
 
-  # Compares a guess and a pattern. Returns a string. The string begins with one
+  # Compares a guess and a pattern. Returns a string. The string begins with
   # one * for each correct color in the right place. It then has one . for each
   # correct color in the wrong place. It gets padded with _s until it is 4 char-
   # acters long.

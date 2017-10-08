@@ -8,12 +8,13 @@ class AI < Mastermind
   end
 
   def play
-    puts "Please enter four digits between 1 and 6."
-    @secret = input_combination
+    # puts "Please enter four digits between 1 and 6."
+    # @secret = input_combination
     while @moves < 12
       ai_guess = guess
       result = check(ai_guess, @secret)
-      process(ai_guess, result)
+      eh = process(ai_guess, result)
+      return @moves if eh == @moves
     end
   end
 
@@ -49,16 +50,18 @@ class AI < Mastermind
 
   def process(ai_guess, result)
     if result == "****"
-      win
+      return win
     else
       @guesses[ai_guess] = result
       @moves += 1
+      nil
     end
   end
 
   def win
-    puts "HAHA I win, I guessed the secret #{@secret.join} in #{@moves} moves."
-    try_again
+    # puts "HAHA I win, I guessed the secret #{@secret.join} in #{@moves} moves."
+    # try_again
+    return @moves
   end
 
 end
