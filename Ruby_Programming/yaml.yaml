@@ -1,0 +1,17 @@
+name: "Poletra"
+height: 124
+age: 28
+children:
+  "Fred":
+    age: 1
+    height: 10
+  "Prelouba":
+    age:  2
+    height: 20
+  "Pronks":
+    age: 3
+    height: 30
+  traits:
+    - smart
+    - nice
+    - caring
