@@ -5,19 +5,20 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+/WebDev101/blogger/.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+/WebDev101/blogger/db/*.sqlite3
+/WebDev101/blogger/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/WebDev101/blogger/log/*
+/WebDev101/blogger/tmp/*
+!WebDev101/blogger/log/.keep
+!/WebDev101/blogger/tmp/.keep
 
-/node_modules
-/yarn-error.log
+/WebDev101/blogger/node_modules
+/WebDev101/blogger/yarn-error.log
 
 .byebug_history
+/WebDev101/blogger/.byebug_history
