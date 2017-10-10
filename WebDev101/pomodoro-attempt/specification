@@ -1,0 +1,26 @@
+Pomodoro clock has three main variables:
+- time til next ding
+- on/off state
+- whether it's on a work phase or break phase
+
+As the page first loads, these variables are set to:
+time: 25 minutes
+state: off
+phase: work
+
+Then there should be a button for the user to click "start".
+This will start counting down 25 minutes.
+There could be some sort of message encouraging the user to keep focused
+for 25 minutes.
+There should also be a clock counting down.
+
+Assuming no interaction from the user, once the clock hits 0
+a ding is heard. The phase then switches to break and the timer
+is reset to 5 minutes.
+
+This remains indefinitely, with a ding and change of phase
+every time the timer gets to 0.
+
+There are two actions the user can take: pause and stop.
+Pause maintains the phase and time count, it just doesn't count
+down. Stop changes state to off, time to 25 and phase to work.

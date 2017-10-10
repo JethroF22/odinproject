@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Pomodoro Clock -- Odin Project -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Pomodoro Timer</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  
+<div id = "wrapper">  
+  <div class ="headFoot">
+    <h1>Pomodoro Timer</h1>
+  </div>
+  
+  <div id="adjustTimes">
+      <table align="center">
+        <tr>
+           <td>Session:</td>
+           <td id="displaySession"></td>
+           <td width = "15"></td>
+           <td>Break</td>
+           <td id="displayBreak"></td>
+        </tr>
+        <tr id ="plusMinus">
+           <td><button id="plusSession" class="buttonPlusMinus">+</button></td>
+           <td><button id="minusSession" class="buttonPlusMinus">-</button></td>
+           <td width = "15"></td>
+           <td><button id="plusBreak" class="buttonPlusMinus">+</button></td>
+           <td><button id="minusBreak" class="buttonPlusMinus">-</button></td>
+        </tr>
+    </table>
+  </div>
+  
+  <div id="display">
+  </div>
+  <center>
+  <div id="controlButtons">
+      <button id="start" class="controls">Start</button>
+      <button id="stop" class="controls">Stop</button>
+      <button id="pause" class="controls">Pause</button>
+      <button id="reset" class="controls">Reset</button>
+  </div>
+  </center>
+    <div class="headFoot">
+    <h1 id="footer">ready to work...</h1>
+  </div>
+  
+</div>  
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
