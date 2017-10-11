@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: <%= bgcolor %>;
+      }
+    </style>
+  </head>
+  <body>
+    <% if message == "You got it right!" %>
+      <p>
+        The SECRET NUMBER is <%= number %>
+      </p>
+    <% end %>
+    <%= message %>
+    <form>
+      <input type='text'   name= 'guess'  />
+      <input type='submit' value='Guess!' />
+    </form>
+  </body>
+</html>
