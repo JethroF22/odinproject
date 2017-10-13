@@ -3,7 +3,10 @@ This file is a list of some articles linked to by the Odin Project courses. It i
 1. Intro to Web Development
   - TODO
 2. Web Development 101
-  - TODO
+  - Git Basics
+    * "How to Write a Git Commit Message"
+      https://chris.beams.io/posts/git-commit/
+      Helpful tips for writing good commit messages
 3. Ruby Programming
   - TODO
 4. Ruby on Rails
