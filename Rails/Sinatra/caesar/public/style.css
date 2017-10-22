@@ -1,0 +1,15 @@
+* {
+  color: #030;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFC;
+}
+
+input[type='text'][value="Please enter the text"] {
+   color: #333;
+}
